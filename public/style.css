@@ -1,0 +1,135 @@
+/* Basic page design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    color: #222222;
+}
+
+header {
+    background-color: #49358c;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+.main-box, .form-box, .section-box {
+    background-color: white;
+    width: 80%;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 22px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.form-box {
+    max-width: 430px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 75px;
+}
+
+button, .button-link {
+    display: inline-block;
+    background-color: #49358c;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .button-link:hover {
+    background-color: #30215f;
+}
+
+a {
+    color: #49358c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 9px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8e3f5;
+}
+
+.project-form {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555555;
+}
+
+/* On smaller screens */
+@media (max-width: 600px) {
+    .main-box, .form-box, .section-box {
+        width: 90%;
+        padding: 14px;
+        box-sizing: border-box;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+
+@media print {
+    header .no-print, .no-print {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .section-box, .main-box {
+        width: 100%;
+        border: none;
+    }
+}
